@@ -54,7 +54,6 @@ The water-level-indicator project has the following key files:
 File Description
 
 src/main.cpp or src/sketch.ino Embedded C++ code to implement the water-level-indicator application.
-##License
-This project is licensed under the MIT License
+
 README.md Project overview documentation and direct link to interactive prototype.
 
