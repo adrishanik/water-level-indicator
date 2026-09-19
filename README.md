@@ -56,3 +56,5 @@ File Description
 src/main.cpp or src/sketch.ino Embedded C++ code to implement the water-level-indicator application.
 
 README.md Project overview documentation and direct link to interactive prototype.
+##License
+This project is licensed under the MIT License.
