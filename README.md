@@ -1,48 +1,61 @@
 # water-level-indicator
-# Automated Water Level Indicator & Monitoring System
 
-An embedded C++ firmware solution designed to monitor liquid levels in real-time, trigger threshold-based visual/audio indicators, and prevent tank overflow or dry-run conditions.
+An embedded C++ firmware to automatically track and measure the water level in a tank or vessel in real-time. The application triggers various visual/audio indicators according to the level thresholds crossed and prevents overflow/dry running of the tank.
 
----
+Live Interactive Simulation
 
-## Live Interactive Simulation
+Try out this embedded firmware prototype in your browser using this link: Run on Wokwi Simulator
 
-Test and interact with the firmware live in your browser without physical hardware:  
-👉 **[Run on Wokwi Simulator](https://wokwi.com/projects/475519206531255297)**
+## Key Features
 
----
+The water-level-indicator application has the following features:
 
-## Features
+Multi-Level Threshold Detection
 
-- **Multi-Level Threshold Detection:** Monitors discrete liquid thresholds (Low, Medium, High / Overflow).
-- **Automated Alerts:** Triggers visual LED indicators and audio alerts when critical thresholds are reached.
-- **Debounced Signal Processing:** Filters out surface ripples and false triggers for stable readouts.
-- **Modular Embedded C++:** Clean structure separating input pin monitoring, state logic, and output control.
+Monitors and tracks the water level crossing the low, medium, and high thresholds.
 
----
+Automated Alerts
 
-## Hardware / Pin Mapping
+The system has indicators that get triggered automatically when the tank level reaches certain thresholds.
 
-| Component | Pin Type | Arduino Pin | Description |
-| :--- | :--- | :--- | :--- |
-| Low Level Sensor / Contact | Digital / Analog In | `A0` / `D2` | Triggers low-level alert |
-| Mid Level Sensor / Contact | Digital / Analog In | `A1` / `D3` | Normal operational range |
-| High / Full Level Sensor | Digital / Analog In | `A2` / `D4` | Overfill alert trigger |
-| Status LEDs (Green/Yellow/Red) | Digital Out | `D8`, `D9`, `D10` | Visual level indicators |
-| Alarm Buzzer | Digital / PWM Out | `D11` | Acoustic warning on overflow/empty |
+Debounced Inputs
 
----
+The free surface oscillations of the water level are damped and filtered out to avoid false indications.
 
-## How It Works
+Modular Embedded C++ Implementation
 
-1. **Sampling:** Reads real-time logic levels or voltages from the water level sensor inputs.
-2. **State Evaluation:** Compares the measured level against calibrated thresholds.
-3. **Indicator Output:** Updates the corresponding LED indicators and sounds alerts if thresholds are breached.
+The C++ code has been modularized and decoupled for better maintainability and easy debugging.
 
----
+## Hardware Connections
+
+The following table describes the connections between the microcontroller and the various hardware peripherals:
+
+Peripheral Type Pin Type Arduino Pin Description
+
+Low Level Sensor / Contact Digital / Analog In A0 / D2 Low Level Detect Input
+
+Mid Level Sensor / Contact Digital / Analog In A1 / D3 Mid Level Detect Input
+
+High / Full Level Sensor Digital / Analog In A2 / D4 High Level Detect Input
+
+Status LEDs (Green/Yellow/Red) Digital Out D8, D9, D10 Level Status Indicators
+
+Alarm Buzzer Digital / PWM Out D11 Overflow Alarm Buzzer
+
+## Working
+
+The embedded application works by:
+
+Sampling the water-level sensor and determining its current state or level.
+
+Actuating the status indicators (LEDs and buzzer) as specified for the corresponding level.
 
 ## Repository Structure
 
-- `src/` (or root): Embedded C++ source code (`main.cpp` or `sketch.ino`).
-- `README.md`: Project documentation and direct interactive simulation link.
--
+The water-level-indicator project has the following key files:
+
+File Description
+
+src/main.cpp or src/sketch.ino Embedded C++ code to implement the water-level-indicator application.
+
+README.md Project overview documentation and direct link to interactive prototype.
