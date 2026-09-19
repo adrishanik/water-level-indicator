@@ -50,6 +50,7 @@ Actuating the status indicators (LEDs and buzzer) as specified for the correspon
 ## Repository Structure
 
 The water-level-indicator project has the following key files:
+<img width="1153" height="717" alt="image" src="https://github.com/user-attachments/assets/e008f18a-4c6c-4d64-b85a-ec5aaf09a52d" />
 
 File Description
 
