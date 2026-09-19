@@ -47,14 +47,8 @@ Sampling the water-level sensor and determining its current state or level.
 
 Actuating the status indicators (LEDs and buzzer) as specified for the corresponding level.
 
-## Repository Structure
-
-The water-level-indicator project has the following key files:
+## THUMBNAIL
 <img width="1153" height="717" alt="image" src="https://github.com/user-attachments/assets/e008f18a-4c6c-4d64-b85a-ec5aaf09a52d" />
-
-File Description
-
-src/main.cpp or src/sketch.ino Embedded C++ code to implement the water-level-indicator application.
-
-README.md Project overview documentation and direct link to interactive prototype.
+## LICENSE
+MIT License
 
