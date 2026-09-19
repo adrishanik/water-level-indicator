@@ -2,9 +2,6 @@
 
 An embedded C++ firmware to automatically track and measure the water level in a tank or vessel in real-time. The application triggers various visual/audio indicators according to the level thresholds crossed and prevents overflow/dry running of the tank.
 
-Live Interactive Simulation
-
-Try out this embedded firmware prototype in your browser using this link: Run on Wokwi Simulator
 
 ## Key Features
 
